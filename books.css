@@ -1,3 +1,9 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
+}
+
+
 #new-book-btn {
     display: block;
     color: #ffffff;
@@ -9,6 +15,7 @@
     padding: 20px;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 #new-book-btn:hover {
@@ -24,12 +31,163 @@
     border-radius: 20px;
 }
 
-#new-book-form {
-    width: 50px;
+form {
+    color: #000000;
+    width: 500px;
     margin: 50px auto;
     text-align: center;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type=submit]  {
+    display: block;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    background-color: #000000;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+input[type=submit]:hover  {
+    display: block;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    background-color: #464545;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+input[type=text], input[type=number] {
+    display: block;
+    width: 400px;
+    height: 25px;
+    margin-top: 8px;
+    background-color: rgb(235, 233, 233);
+    border-radius: 10px;
+    border: 1px solid #e9e7e7;
+    margin: 0 auto;
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    border-color: #464545;
+    box-shadow: #edee9d;
+}
+
+.book-header {
+    background-color: #464545;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.book-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.book-author {
+    margin: 5px 0 0 0;
+    font-size: 18px;
+}
+
+.book-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.book-pages {
+    margin: 0;
+    font-size: 18px;
+}
+
+.book-status {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+}
+
+.read-status {
+    background-color: blue;
+}
+
+/* For the Library */
+
+.library-title {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#library {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bookDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid rgb(146, 228, 69);
+  border-radius: 25px;
+  height: 300px;
+  width: 250px;
+  padding: 15px;
+  margin: 20px;
+  background-color: #edee9d;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10%;
+}
+
+.readBtn {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.author {
+    margin-bottom: 20%;
+}
+
+.pages {
+    margin: 0 auto;
 }
