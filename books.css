@@ -153,8 +153,8 @@ input[type=text]:focus, input[type=number]:focus {
   align-items: center;
   border: 5px solid rgb(146, 228, 69);
   border-radius: 25px;
-  height: 300px;
-  width: 250px;
+  height: 250px;
+  width: 300px;
   padding: 15px;
   margin: 20px;
   background-color: #edee9d;
