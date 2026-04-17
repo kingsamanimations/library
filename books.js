@@ -18,8 +18,6 @@ class Libraries {
   render() {
     const display = document.getElementById('library');
     display.innerHTML = ""; // To prevent duplicate copies
-    const books = document.querySelectorAll('book');
-    books.forEach(book => display.removeChild(book));
     
     let libraryBook = document.querySelector("#library");
     // Go over the myLibrary array and display each book that's added
