@@ -3,6 +3,7 @@
 // Create book and add to library
 let myLibrary = [];
 
+// Book Class
 class Book {
   constructor(title, author, pages, read) {
     // the constructor...
@@ -14,6 +15,9 @@ class Book {
 }
 
 // Render the output into myLibrary
+// Libraries Class
+
+// Everything is inside
 class Libraries {
   render() {
     const display = document.getElementById('library');
@@ -25,7 +29,7 @@ class Libraries {
     for (let i = 0; i < myLibrary.length; i++) {
       console.log(myLibrary[i]);
 
-      this.createBook(myLibrary[i]);
+      this.createBook(myLibrary[i]); // 'this' is there for class methods to be called on the instance
     }
   }
 
@@ -37,7 +41,7 @@ class Libraries {
     let read = document.querySelector("#read").checked;
     let newBook = new Book(title, author, pages, read);
     myLibrary.push(newBook);
-    this.render();
+    this.render(); // 'this' is there for class methods to be called on the instance  
 
     // Output the finished form
     console.log(newBook);
@@ -82,7 +86,7 @@ class Libraries {
     // Toggle ability to each book read
     readBtn.addEventListener('click', () => {
       item.read = !item.read;
-      this.setData();
+      this.setData(); // 'this' is there for class methods to be called on the instance
       this.render();
     });
   }
