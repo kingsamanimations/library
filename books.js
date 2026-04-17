@@ -129,6 +129,7 @@ library.loadData(); // Call it when page loads
 library.init();
 
 /* As regular Functions 
+
 // Create book and add to library
 let myLibrary = [];
 
