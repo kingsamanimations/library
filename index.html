@@ -12,11 +12,14 @@
     </button>
     <form id="new-book-form" style="display: none;">
         <p>Title</p>
-        <input type="text" id="title">
+        <input type="text" id="title" name="title" required minlength="1">
+        <span class="error-message" id="title-error"></span>
         <p>Author</p>
-        <input type="text" id="author">
+        <input type="text" id="author" name="author" required minlength="1">
+        <span class="error-message" id="author-error"></span>
         <p>Pages</p>
-        <input type="number" id="pages">
+        <input type="number" id="pages" name="pages" minlength="1">
+        <span class="error-message" id="pages-error"></span>
         <p>Read:</p>
         <input type="checkbox" id="read">
         <input type="submit" value="Add Book">

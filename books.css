@@ -9,7 +9,7 @@ body {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    font-weight: 20px;
+    font-weight: bold;
     background-color: #0ea5e9;
     margin: 0 auto;
     padding: 20px;
@@ -23,7 +23,7 @@ body {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    font-weight: 20px;
+    font-weight: bold;
     background-color: #59c1f1;
     margin: 0 auto;
     padding: 20px;
@@ -47,7 +47,7 @@ input[type=submit]  {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    font-weight: 20px;
+    font-weight: bold;
     background-color: #000000;
     margin: 0 auto;
     padding: 20px;
@@ -60,7 +60,7 @@ input[type=submit]:hover  {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    font-weight: 20px;
+    font-weight: bold;
     background-color: #464545;
     margin: 0 auto;
     padding: 20px;
@@ -85,7 +85,7 @@ input[type=text], input[type=number] {
 
 input[type=text]:focus, input[type=number]:focus {
     border-color: #464545;
-    box-shadow: #edee9d;
+    box-shadow: 2px 2px 5px rgb(244, 233, 137);
 }
 
 .book-header {
@@ -130,7 +130,7 @@ input[type=text]:focus, input[type=number]:focus {
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    font-weight: 20px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     margin-top: 10%;
@@ -175,7 +175,7 @@ input[type=text]:focus, input[type=number]:focus {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    font-weight: 20px;
+    font-weight: bold;
     margin: 0 auto;
     padding: 10px;
     border: none;
@@ -190,4 +190,20 @@ input[type=text]:focus, input[type=number]:focus {
 
 .pages {
     margin: 0 auto;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+.error-message.active {
+    display: block;
 }

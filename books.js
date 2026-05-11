@@ -114,11 +114,44 @@ class Libraries {
       newBookForm.style.display = "block";
     })
     // Show the output form
-    document.querySelector("#new-book-form").addEventListener("submit", (event) => /* Arrow function*/ {
-      // Prevent page refreshing
+    // Check if all fields are submitted
+    document.querySelector("#new-book-form").addEventListener("submit", (event) => {
       event.preventDefault();
-      this.addBookToLibrary();
-    })
+
+      let isValid = true;
+
+      const title = document.querySelector("#title");
+      const author = document.querySelector("#author");
+      const pages = document.querySelector("#pages");
+
+      // Reset error messages first
+      document.querySelectorAll(".error-message").forEach(span => {
+        span.classList.remove("active");
+      });
+
+      if (title.value == "") {
+        document.querySelector("#title-error").textContent = "This field is required!";
+        document.querySelector("#title-error").classList.add("active");
+        isValid = false;
+      }
+
+      if (author.value == "") {
+        document.querySelector("#author-error").textContent = "This field is required!";
+        document.querySelector("#author-error").classList.add("active");
+        isValid = false;
+      }
+
+      if (pages.value == "" || pages.value < 1) {
+        document.querySelector("#pages-error").textContent = "Please enter a valid page number!";
+        document.querySelector("#pages-error").classList.add("active");
+        isValid = false;
+      }
+
+      if (isValid) {
+        this.addBookToLibrary();
+      }
+
+    });
 
   }
 
